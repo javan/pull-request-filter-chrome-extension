@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "GitHub Pull Request File Type Filter",
+  "description": "Filter pull request changes by file type",
+  "version": "1.0.0",
+  "icons": {
+     "16": "icon16.png",
+     "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": [
+    "https://github.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "run_at": "document_end",
+      "css": [
+        "index.css"
+      ],
+      "js": [
+        "index.js"
+      ]
+    }
+  ]
+}

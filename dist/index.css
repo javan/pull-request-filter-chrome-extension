@@ -1,0 +1,23 @@
+ul.filter-type-list {
+  list-style-type: none;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 8px;
+  padding: 8px 10px
+}
+
+ul.filter-type-list li {
+  padding: 0 5px;
+  font-size: 12px;
+  line-height: 20px;
+  background-color: rgba(246, 248, 250, 0.5);
+  border: 2px solid #eaecef;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+ul.filter-type-list li label {
+  font-weight: normal;
+}

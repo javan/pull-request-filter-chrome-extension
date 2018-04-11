@@ -1,0 +1,19 @@
+{
+  "name": "github-file-type-filter-chrome-extension",
+  "private": true,
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "dependencies": {
+    "@stimulus/mutation-observers": "^1.0.0",
+    "@types/webpack-env": "^1.13.5",
+    "stimulus": "^1.0.1",
+    "ts-loader": "^4.1.0",
+    "typescript": "^2.8.1",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13"
+  }
+}
