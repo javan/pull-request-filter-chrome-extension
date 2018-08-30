@@ -51,8 +51,8 @@ export default class extends Controller {
   private get typeListHTML(): string {
     const { unselectedTypes } = this
     return Array.from(this.types).map(type => `
-      <li class="file-info">
-        <label>
+      <li>
+        <label class="px-1 text-mono d-block">
           <input type="checkbox" value="${type}" ${unselectedTypes.has(type) ? "" : "checked"}
             data-target="filter.typeInput"
             data-action="click->filter#checkExclusively filter#render">
