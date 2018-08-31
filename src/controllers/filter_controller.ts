@@ -17,11 +17,9 @@ export default class extends Controller {
 
   checkExclusively(event) {
     if (event.metaKey) {
-      event.preventDefault()
       this.typeInputTargets.forEach(element => {
         element.checked = element == event.target
       })
-      this.render()
     }
   }
 
@@ -55,7 +53,7 @@ export default class extends Controller {
         <label>
           <input type="checkbox" value="${type}" ${unselectedTypes.has(type) ? "" : "checked"}
             data-target="filter.typeInput"
-            data-action="click->filter#checkExclusively filter#render">
+            data-action="click->filter#checkExclusively change->filter#render">
           ${type == "other" ? "" : "."}${type}
         </label>
       </li>`.trim()
