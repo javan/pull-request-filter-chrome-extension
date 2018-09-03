@@ -9,9 +9,7 @@ ul.filter-type-list {
 }
 
 ul.filter-type-list li {
-  padding: 0 5px;
   font-size: 12px;
-  line-height: 20px;
   background-color: rgba(246, 248, 250, 0.5);
   border: 2px solid #eaecef;
   border-radius: 3px;
