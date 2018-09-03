@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "GitHub Pull Request File Type Filter",
   "description": "Filter pull request changes by file type",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "icons": {
      "16": "icon16.png",
      "48": "icon48.png",
